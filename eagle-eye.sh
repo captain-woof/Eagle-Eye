@@ -195,9 +195,9 @@ function search_for_hashes(){
 			fi
 		done
 		if [[ ! -d ${output_file} ]]; then
-				grep --color=auto -inHEr "\\\$2[ay]\\$" 2> /dev/null | tee -a ${output_file}
+				grep --color=auto -inHEr "\\\$2[aby]\\$" 2> /dev/null | tee -a ${output_file}
 			else
-				grep --color=auto -inHEr "\\\$2[ay]\\$" 2> /dev/null
+				grep --color=auto -inHEr "\\\$2[aby]\\$" 2> /dev/null
 			fi
 	done
 	wait_for_user
